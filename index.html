@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Test</title>
+<style>
+
+#cy {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+</style>
+<script type="text/javascript" src="cytoscape.min.js"></script>
+<div id='cy'></div>
+<script type="text/javascript">
+
+fetch("data.json")
+	.then(data => data.json())
+	.then(data => {
+		var cy = cytoscape({
+			container: document.getElementById('cy'),
+			elements: data,
+			style: [
+				{
+					selector: 'node',
+					style: {
+						'background-color': 'green',
+						label: 'data(id)'
+					}
+				},
+				{
+					selector: 'edge',
+					style: {
+						'curve-style': 'bezier',
+						'target-arrow-shape': 'triangle',
+						'target-arrow-color': 'red',
+						'line-color': 'red'
+					}
+				}],
+			layout: {
+				name: 'random'
+			}
+		});
+	});
+
+</script>

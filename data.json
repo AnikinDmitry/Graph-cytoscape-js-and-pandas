@@ -1,0 +1,58 @@
+[
+    {
+        "data": {
+            "id": "A"
+        }
+    },
+    {
+        "data": {
+            "id": "B"
+        }
+    },
+    {
+        "data": {
+            "id": "C"
+        }
+    },
+    {
+        "data": {
+            "id": "D"
+        }
+    },
+    {
+        "data": {
+            "source": "A",
+            "target": "B"
+        }
+    },
+    {
+        "data": {
+            "source": "A",
+            "target": "C"
+        }
+    },
+    {
+        "data": {
+            "source": "A",
+            "target": "D"
+        }
+    },
+    {
+        "data": {
+            "source": "B",
+            "target": "C"
+        }
+    },
+    {
+        "data": {
+            "source": "B",
+            "target": "D"
+        }
+    },
+    {
+        "data": {
+            "source": "C",
+            "target": "D"
+        }
+    }
+]
